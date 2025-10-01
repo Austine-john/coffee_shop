@@ -3,7 +3,7 @@ class Coffee:
     all = []
     def __init__(self,name):
         if isinstance(name,str) and len(name) >=3:  
-            self.name = name
+            self._name = name
             Coffee.all.append(self)
 
         else:

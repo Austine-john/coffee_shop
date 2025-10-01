@@ -5,9 +5,9 @@ class Order:
             raise Exception("Price must be a float")
         if not (1.0<= price <= 10.0):
             raise Exception("Price must be between 1.0 and 10.0")
-        self.customer = customer
-        self.coffee = coffee
-        self.price = price
+        self._customer = customer
+        self._coffee = coffee
+        self._price = price
         Order.all.append(self)
 
     @property

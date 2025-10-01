@@ -10,8 +10,8 @@ class Customer:
         return self._name
     
     @name.setter
-    def name(self,value):
-        if not isinstance(value,str) and 1<= (value) <=15:
+    def name(self, value):
+        if isinstance(value, str) and 1 <= len(value) <= 15:
             self._name = value
         else:
             raise Exception("Name must be a string between 1 and 15 characters")
